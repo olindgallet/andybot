@@ -1,0 +1,46 @@
+#body{
+	margin-top: 100px;
+}
+
+ul.nobullet{
+	list-style: none;
+	padding: 0 0 0 0;
+}
+
+input.login-field{
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.login-button{
+	margin-left: 110px;
+}
+
+.toggle-line{
+	margin-top: 20px;
+}
+
+.toggle-label{
+	margin-right: 30px;
+}
+
+.toggle-button{
+	padding: 5px;
+}
+
+.edge-bar{
+	background: #8c2466;
+	color: #fff;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.edge-bar a{
+	color: #fff;
+}
+
+.edge-bar a:hover{
+	text-decoration: underline;
+	color: #fff;
+}
