@@ -8,14 +8,14 @@ ___
 **How to install the chat bot:**
 1. Download the files to a directory.  Easiest option is to download as zip, then unzip it to a folder of your choice.
 2. Navigate in the terminal to the directory you created.  Type in `npm install` to download all packages needed.
-3. Goto the config folder.  Change `dummy-server-vars.js` to just `server-vars.js` and imput your bot username, password, and channel name.  You may need to make a new Twitch developer account for this.
+3. Goto the config folder.  Change `dummy-server-vars.js` to just `server-vars.js` and input your bot username, password, and channel name.  You may need to make a new Twitch developer account for this.
 4. Go to the main directory and type in `node server.js`.  If everything goes well, you should see the console pop up and have it wait for actions.
 5. Experiment with the different commands!  Write your own!
 
 **Code Points of Interest:**
 
 * `command-permissions`: This is where each command has a variable for its ability to be used.  If you add/remove commands, also add/remove an appropriate variable.  You can either manually set permissions here or change them in the front end.
-* `//add your commands here`: After this comment is the processing loop.  First, each message gets checked for length and if commands are on cooldown.  Then they're checked for content and if a match is found, an appropriate action happens.  `clieent.send` will have your bot send a meesage in chat.  Make sure to respect the cooldown mechanics by locking it in your actions and using `setTimeout` to turn off the cooldown.
+* `//add your commands here`: After this comment is the processing loop.  First, each message gets checked for length and if commands are on cooldown.  Then they're checked for content and if a match is found, an appropriate action happens.  `client.send` will have your bot send a message in chat.  Make sure to respect the cooldown mechanics by locking it in your actions and using `setTimeout` to turn off the cooldown.
 * `/** END server setup **/`: Marks the end of the bot code.  The code after is used for the front end if you choose to use it.
 ___
 **How to install the frontend:**
